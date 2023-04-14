@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Acceuil</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="shortcut icon" type="image/png" href="logo-en-tete.png  ">
+	</head>
+	<body>
+<header>
+
+	<!-- nav-bar -->
+	<a class="logo-a" id="logo-a" style="text-decoration: none; margin-left: 10px;"href="#">
+		<h1 class="nav-logo" id="nav-logo"  >PORTFOLIO</h1>
+	</a>
+			<nav id="nav-bar">
+				<ul>
+
+					<li><a href="#" id="nav_bouton">accueil</a></li>
+					<li><a href="#box2" id="nav_bouton">à propos</a></li>
+					<li><a href="#contact" id="nav_bouton">contact</a></li>
+					<li><a href="#mes projets" id="nav_bouton">mes projets</a></li>
+					<li><a href="#veille technologique" id="nav_bouton">veille technologique</a></li>
+				</ul>
+			</nav>
+</header>
+
+<main>
+
+	<section class="intro">
+
+			<h1 class="intro_h1">BIENVENUE DANS MON <span class="underline"> PORTFOLIO</span>.</h1>
+			<h2 class="intro_h2">Je m'appelle <span class="underline">André Bozo</span>, étudiant en informatique et developpement web. <br> Et surtout, passioné en WEB-design !</h2>
+			<p class="intro_p">Ce site WEB à été crée exclusivement par mes soins en utlisiant seulemnt du HTML / CSS / JS.
+			<br>Laissez -vous guider afin d'y découvrir mes projets réalisés et les compétences que j'ai acquéris au cours de mon cursus.</p>
+
+		<a href="#box2"  class="scroll-down" id="scroll-down">• cliquez ici pour défiler •</a>
+
+	</section>
+
+
+
+
+
+
+
+		<div id="box2">
+
+				<!-- contenu de la boîte -->
+		</div>
+		<div class="box">
+			<img src="photo de profil.jpeg" alt="Photo de profil">
+		<div class="content">
+					<h1 class="PRESENTATION_h1" id="PRESENTATION_h1" >PRESENTATION</h1>
+					<p>
+
+						Bonjour, je m'appelle André, voici mon PORTFOLIO en tant qu'étudiant en BTS SIO.
+						
+					<br><br>Ma formation au <span style="text-decoration: underline;" > CAMPUS MONTSOURIS</span> à couvret un large éventail de sujets comme le developpement applicatif, la gestion de bases de données et le developmment-WEB,  mais c'est sutout la partie <span style="font-weight: bold; color: #0076ff;" > CSS</span>  et l'aspect <span style=" font-weight: bold; color: #0076ff;"> WEB design</span> qui a su capté le plus mon intert et stimuler ma créativité !
+					<br>J'aime créer des sites web esthétiques, fonctionnels et adaptatifs. Je suis perfectionniste et j'aime acquérir de nouvelles connaissances. Voici quelques exemples de mes réalisations en entreprise, lors de missions, en cours ou personnelles, vous pouvez consulter sur mon portfolio.
+					</p>
+					<p>
+ 
+						<a href="#contact" id="bouton6">contactez-moi </a>
+							<br><br><br><br><br><br>
+							<a href="https://diplomeo.com/actualite-bts_sio_slam_ou_sisr" style="font-size: small; color: #4b4b4b; text-decoration: none; cursor: pointer;" > En savoir plus sur le BTS SIO ...</a>
+					</p>
+			</div>
+								<!-- A PROPOS --><div class="a propos" ></div>
+			</div>
+
+
+	
+<div class="box2" class="box2">
+	<div class="content">
+		<h1 class="COMPETENCES_h1" id="COMPETENCES_h1">MES COMPETENCES</h1>
+		<p>
+			Au cours de ma formation, j’ai pu acquérir des compétences diverses dans le domaine de l’informatique et de la programmation, ainsi que dans d’autres domaines : 			
+	<div class="w3-container">
+		<h2 style="color: #4b4b4b;">skils</h2>
+
+			<button  class="w3-button w3-green" onclick="move()">voir mes commptences</button> 
+
+			<div class="w3-light-grey"></div>
+			<div id="Bar1" class="w3-green" style="background: rgb(0,159,255);
+				border-radius: 5px; height:24px;width:0%">
+			</div>
+	
+		
+			<div class="w3-light-grey"></div>
+			<div id="Bar2" class="w3-green" style="background: rgb(0,159,255);
+				border-radius: 5px; height:24px;width:0%">
+		</div>
+	
+		
+			<div class="w3-light-grey"></div>
+			<div id="Bar3" class="w3-green" style="background: rgb(0,159,255);
+				border-radius: 5px; height:24px;width:0%">
+		</div>
+
+		
+			<div class="w3-light-grey"></div>
+			<div id="Bar4" class="w3-green" style="background: rgb(0,159,255);
+				border-radius: 5px; height:24px;width:0%">
+		</div>
+	</div>
+</div>
+	</div>
+
+<script>
+	function move() {
+	  var elem = document.getElementById("Bar1");   
+	  var width = 1;
+	  var id = setInterval(frame, 10);
+	  function frame() {
+		if (width >= 95) {
+		  clearInterval(id);
+		} else {
+		  width++; 
+		  elem.style.width = width + '%'; 
+		}
+	  }
+	}
+  
+	function move() {
+	  var elem = document.getElementById("Bar2");   
+	  var width = 1;
+	  var id = setInterval(frame, 10);
+	  function frame() {
+		if (width >= 55) {
+		  clearInterval(id);
+		} else {
+		  width++; 
+		  elem.style.width = width + '%'; 
+		}
+	  }
+	}
+  
+	function move() {
+	  var elem = document.getElementById("Bar3");   
+	  var width = 1;
+	  var id = setInterval(frame, 10);
+	  function frame() {
+		if (width >= 65) {
+		  clearInterval(id);
+		} else {
+		  width++; 
+		  elem.style.width = width + '%'; 
+		}
+	  }
+	}
+  
+	function move() {
+	  var elem = document.getElementById("Bar4");   
+	  var width = 1;
+	  var id = setInterval(frame, 10);
+	  function frame() {
+		if (width >= 70) {
+		  clearInterval(id);
+		} else {
+		  width++; 
+		  elem.style.width = width + '%'; 
+		}
+	  }
+	}
+</script>
+
+
+<!-- PROJETS -->
+
+<!-- <div class="box2" id="veille technologique">
+	<div class="content">
+		<h1 class="veille_h1" id="COMPETENCESveille_h1">MES PROJETS</h1>
+		<p>
+			Au cours de ma formation, j’ai pu acquérir des compétences diverses dans le domaine de l’informatique et de la programmation, ainsi que dans d’autres domaines : 
+		</p>
+		<p>
+			• En WEB-design : (HTML, CSS, JS )
+		</p>
+		<p>
+			• En gestion de bases de données ( SQL, wamp, PHP, Active Directory)
+		</p>
+		<p>
+			• En développement ( Python, C#, et d’autres )
+		</p>
+		<p>
+			• En gestion de stocks ( numéroter et référencer des items a lister, Excel) 
+		</p>
+
+		
+	</div>
+</div> -->
+
+
+<div id="contact">
+	<div id="contact-form" class="contact-form" >
+		<h1>ME CONTACTER </h1>
+		<form action="send_email.php" class="form_contact" method="post">
+			<label for="name">Nom</label>
+			<input type="text" id="name" name="name" placeholder="Votre nom" required>
+			<label for="email">Email</label>
+			<input type="email" id="email" name="email" placeholder="Votre email" required>
+			<label for="message">Message</label>
+			<textarea id="message" name="message" placeholder="Votre message" required  ></textarea>
+			<button type="submit">Envoyer</button>
+		</form>
+	</div>
+
+	<!-- HTML code for the Google map -->
+
+	<div class="map-box">
+		<div class="google-map">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.999836971707!2d2.294481315674771!3d48.85837007928766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e296f9aa34b%3A0x9c8f0eeeff4b710f!2sEiffel%20Tower%2C%20Paris%2C%20France!5e0!3m2!1sen!2sca!4v1639502544408!5m2!1sen!2sca" width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+		</div>		
+		<p style="font-family: sans-serif; font-weight: bold; color: #6B6B6B;">
+			Paris, ille-de-france 75000.
+		</p>
+
+
+	</div>
+</div>
+	</main>
+
+	<!-- footer -->
+	<footer>
+		<div class="footer-clean">
+			<footer>
+				
+				<h3 class="footer_h3"> PORTFOLIO </h3>
+				<div class="container">
+
+					
+<div class= "services" id="footer_p" style=" padding: 15px;">
+
+    <p> <span style="text-decoration: underline; font-weight: bold;" >CONTACTS</span> </p>
+    <p>andre.b-pro@hotmail.com</p>
+    <p>linked-in : andre bozo </p>
+    <p>instagram : andre bozo </p>
+    <p>tel  : 06 26 95 92 48 </p>
+
+
+</div>
+					
+					<div class="row">
+						<div class="services_h3">
+							<h3 class="services_h3">Services</h3>
+							<ul>
+									<li><a href="#">Web design</a></li>
+									<li><a href="#">Development</a></li>
+									<li><a href="#">Hosting</a></li>
+							</ul>
+						</div>
+						<div class="about_h3">
+							<h3 class="about_h3">About</h3>
+							<ul>
+									<li><a href="#">Company</a></li>
+									<li><a href="#">Team</a></li>
+									<li><a href="#">Legacy</a></li>
+							</ul>
+						</div>
+						<div class="ccareers_h3">
+							<h3 class="careers_h3">Careers</h3>
+							<ul>
+									<li><a href="#">Job openings</a></li>
+									<li><a href="#">Employee success</a></li>
+									<li><a href="#">Benefits</a></li>
+							</ul>
+						</div>
+					</div>
+		
+					<div class="row justify-content-center">
+						<div class="socials_links">
+							<a href="#"><i class="icon ion-social-facebook"></i>
+							</a><a href="#"><i class="icon ion-social-twitter"></i>
+							</a><a href="#"><i class="icon ion-social-snapchat"></i>
+							</a><a href="#"><i class="icon ion-social-instagram"></i></a>
+						</div>
+
+
+					</div>
+						<p class="PORTFOLIO_copy_right">PORTFOLIO | André Bozo 2023 &copy;</p>
+				</div>
+				<div class="" ></div>
+					  <h4>d'autres questions, n'éhistez pas ! </h4>
+					  <input type="email" name="a.bozo@hotmail.fr" id="mail" placeholder="entrez votre mail ..."> 
+			
+					</body>
+					</html>
+	</footer>
+		
+		
+</body>
+
+</html>
+
+
