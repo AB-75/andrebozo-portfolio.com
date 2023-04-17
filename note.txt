@@ -1,0 +1,70 @@
+
+nav bar 
+background: #000000a1;
+
+intro BG
+linear-gradient(56deg, rgba(0,117,255,1) 20%, rgb(255 0 215) 100%)
+
+linear-gradient(163deg, rgba(1,0,69,1) 35%, rgba(175,26,0,1) 100%)
+
+
+
+
+#contact {
+    width: auto;
+    color: white;
+    background: linear-gradient(23deg, rgba(10,14,29,1) 0%, rgba(10,14,29,1) 55%, rgba(143,58,49,1) 100%);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    display: flex;
+    margin-left: 45px;
+    margin-right: 45px;
+    margin-top: 60px;
+    padding: 20px;
+    transition: transform 0.4s ease;
+}
+
+
+main .box {
+    background: #161616;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    display: flex;
+    
+    transition: transform 0.4s ease;
+    margin-left: 45px;
+    margin-right: 45px;
+    margin-top: 60px;
+    padding: 20px;
+    width: auto;
+
+}
+
+
+
+
+::-webkit-scrollbar-thumb {
+    background: rgb(37 37 37 / 57%);
+    border-radius: 5px;
+}
+
+
+::-webkit-scrollbar-track {
+    background: #0000002e;
+}
+
+
+
+element.style {
+}
+#bouton6:hover {
+    background-color: #6b7a8f;
+}
+#bouton6 {
+    /* background-color: rgb(29,0,255); */
+    background: #0069ff;
+    color: white;
+    border-radius: 5px;
+    padding: 2.5px 5px;
+    text-decoration: none;
+}
