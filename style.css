@@ -942,7 +942,7 @@ element.style
 	top: 90vh;
 	left: 90vh;
 	font-family: sans-serif;
-	animation: jump 0.8s linear 2;
+	animation: jump 0.8s linear 3;
 	text-decoration: none;
 	padding: 5px;
 	border-radius: 5px;
