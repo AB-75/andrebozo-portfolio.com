@@ -65,7 +65,6 @@ body
 	transform: translateY(350px);
 	max-width: 85%;
 	opacity: 0;
-	/* animation-delay: 0.5s; */
 	animation: slideUp 4s forwards;
 }
 
@@ -159,11 +158,13 @@ hr
 #logo-a:hover
 {
 	transform: scale(1.09);
+	transition: transform 0.4s ease;
 }
 
 #nav_bouton:hover
 {
-	background-color: #83848670;
+	background-color: #83848647;
+
 }
 
 header
@@ -311,6 +312,12 @@ nav li
 	margin-right: 20px;
 }
 
+nav li:hover
+{
+	transform: scale(1.09);
+	transition: transform 0.4s ease;
+}
+
 #nav-bar a
 {
 	color: white;
@@ -333,12 +340,14 @@ main .box
 	margin-top: 60px;
 	padding: 20px;
 	width: auto;
+	/* transform: translate(20vh); */
 }
 
 main .box:hover
 {
 	transform: scale(1.02);
 	filter: blur(0px);
+	/* height: 10vh; */
 }
 
 main .box2:hover
@@ -372,7 +381,8 @@ main .box .content
 {
 	padding: 40px;
 	color: white;
-	max-width: 701px;
+	width: 95vh;
+	margin-left: 5vh;
 }
 
 main .box h3
@@ -384,7 +394,6 @@ main .box p
 {
 	margin-bottom: 0;
 	font-size: large;
-	max-width: 701px;
 	margin-top: 20px;
 }
 
@@ -425,8 +434,7 @@ main .box2
 
 .barres-pourcentage{
 	padding: 40px;
-	padding-top: 0;
-	/* transform: translate(25%); */
+	padding-top: 20px;
 }
 
 .my-progress-bar
@@ -435,14 +443,15 @@ main .box2
 	background-color: #f2f2f2;
 	border-radius: 5px;
 	margin-bottom: 10px;
-	width: 98%;
+	width: 80vh;
+	display: flex;
 }
 
 .my-progress-bar .progress
 {
 	height: 100%;
 	border-radius: 5px;
-	background-color: #0069ff;
+	background: linear-gradient(94deg, rgba(128,180,255,1) 0%, rgba(27,121,255,1) 50%, rgba(27,121,255,1) 100%);
 	animation-name: slideIn;
 	animation-duration: 2s;
 }
@@ -464,8 +473,10 @@ main .box2
 .desktop-img
 {
 	border-radius: 45px;
-	max-width: 50%;
+	max-width: 80vh;
+	height: 70vh;
 	padding: 40px;
+	margin-top: 55px;
 }
 
 .w3-light-grey
@@ -535,41 +546,36 @@ main .box2 p
 
 .grid
 {
-	padding: 0;
-	width: 100%;
-	max-width: 50rem;
-	margin-left: auto;
+	margin-left: 4vh;
 	margin-right: auto;
-	display: inline-grid;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	flex-direction: row;
-	flex-wrap: wrap;
 }
+
+
 
 .grid-block
 {
-	width: 50%;
-	min-height: 11.25rem;
-	padding-left: 40px;
 	padding-top: 40px;
+	display: inline-flex;
 }
 
 .image-grid .tile-img
 {
 	position: relative;
-	-webkit-transition-property: opacity, top, left, box-shadow;
 	transition-property: opacity, top, left, box-shadow;
 }
 
 .tile-link
 {
 	display: block;
+	padding: 10px;
+	width: 40vh;
+
 }
 
 .tile-link:hover .tile-img
 {
 	opacity: 1;
+	filter: none;
 }
 
 .tile-link:hover .tile-img-link
@@ -588,12 +594,12 @@ main .box2 p
 	width: 100%;
 	height: auto;
 	opacity: 1;
-	-webkit-transition-property: opacity;
 	transition-property: opacity;
-	-webkit-transition-duration: 0.125s;
 	transition-duration: 0.125s;
 	-webkit-transition-timing-function: ease-in;
 	transition-timing-function: ease-in;
+	filter: blur(3px);
+	fill-opacity: calc(3px);
 }
 
 /* nous contacter  */
@@ -922,7 +928,7 @@ element.style
 
 .scroll-down:hover
 {
-	transform: scale(1.1);
+	transform: scale(1.2);
 	transition: transform 0.4s ease;
 }
 
@@ -933,7 +939,7 @@ element.style
 	font-weight: bold;
 	position: absolute;
 	transform: translate(0);
-	top: 95vh;
+	top: 90vh;
 	left: 90vh;
 	font-family: sans-serif;
 	animation: jump 0.8s linear 2;
