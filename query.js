@@ -5,11 +5,6 @@ document.querySelector('.scroll-down').addEventListener('click', function(event)
 	document.querySelector('#box2').scrollIntoView({ behavior: 'smooth' });
 });
 
-// window.addEventListener('scroll', function() {
-// 	var scrollPosition = window.pageYOffset;
-// 	var element = document.querySelector('.intro_section');
-// 	element.style.transform = 'translateX(' + scrollPosition + 'px)';
-// });
 
 var link = document.querySelector('#nav-logo');
 link.addEventListener('click', function(event) {
@@ -23,3 +18,12 @@ window.addEventListener('scroll', function() {
     let value = window.scrollY;
     introSection.style.right = value * 2 + 'px';
 });
+
+function move() {
+	var progressBars = document.querySelectorAll('.progress');
+	var percentages = [95, 95, 80, 65, 55, 75, 65];
+	for (var i = 0; i < progressBars.length; i++) {
+		progressBars[i].style.transition = 'width 2s';
+		progressBars[i].style.width = percentages[i] + '%';
+	}
+}
