@@ -430,7 +430,7 @@ main .box2
 
 .my-progress-bar
 {
-	height: 24px;
+	height: 1.5vh;
 	background-color: #f2f2f2;
 	border-radius: 5px;
 	margin-bottom: 10px;
