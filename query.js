@@ -27,3 +27,10 @@ function move() {
 		progressBars[i].style.width = percentages[i] + '%';
 	}
 }
+
+
+
+document.getElementById("nav_bouton").addEventListener("click", function(event){
+	event.preventDefault();
+	window.history.replaceState(null, null, event.target.href);
+  });
