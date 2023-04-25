@@ -931,3 +931,140 @@ html
 {
 	scroll-behavior: smooth;
 }
+@media only screen and (max-width: 1500px) {
+	/* For mobile phones: */
+	[class*="col-"] {
+	  width: 100%;
+	}
+	main .box img
+		{
+			/* display: flex;
+			padding: 0px;
+			border-radius: 0px;
+			height: 2vh; */
+			display: none;
+		}
+		
+		.intro {
+			border-radius: 5px;
+			display: flex;
+			position: relative;
+			width: auto;
+			background: linear-gradient(56deg, rgba(0,117,255,1) 20%, rgb(255 0 215) 100%);
+			width: auto;
+			padding-left: 10vh;
+			padding: 50px;
+			height: 100vh;
+		}
+
+
+
+
+		main .box {
+			background: #1e1e1e;
+			border-radius: 5px;
+			box-shadow: 0 0 10px rgba(0,0,0,0.2);
+			transition: transform 0.4s ease;
+			margin-left: 1vh;
+			margin-right: 1vh;
+			margin-top: 60px;
+			padding: 20px;
+			width: auto;
+		}
+
+		main .box .content {
+			/* padding: 40px; */
+			color: white;
+			/* width: 70vh; */
+			/* margin-left: 5vh; */
+			display: inline-block;
+			width: auto;
+			max-width: 100%;
+			/* transform: translateX(10%); */
+		}
+
+			main .box img
+			{
+				display: none;
+			}
+
+			main .box p {
+				margin-bottom: 0;
+				font-size: large;
+				margin-top: 20px;
+				width: auto;
+			}
+
+		main .box2 {
+			width: auto;
+			color: white;
+			background: #1e1e1e;
+			border-radius: 5px;
+			box-shadow: 0 0 10px rgba(0,0,0,0.2);
+			display: flex;
+			margin-left: 1vh;
+			margin-right: 1vh;
+			margin-top: 60px;
+			padding-right: 116px;
+			transition: transform 0.4s ease;
+		}
+			.desktop-img {
+				display: none;
+			}
+
+			.my-progress-bar {
+				height: 2vh;
+				background-color: #f2f2f2;
+				border-radius: 5px;
+				margin-bottom: 10px;
+				max-width: 75%;
+				display: flex;
+			}
+
+		.box3 {
+			width: auto;
+			color: white;
+			background: #1e1e1e;
+			border-radius: 5px;
+			box-shadow: 0 0 10px rgba(0,0,0,0.2);
+			display: inline-flex;
+			margin-left: 1vh;
+			margin-right: 1vh;
+			margin-top: 60px;
+			padding: 20px;
+			transition: transform 0.4s ease;
+		}
+	
+		#contact {
+			color: white;
+			background: #1e1e1e;
+			border-radius: 5px;
+			box-shadow: 0 0 10px rgba(0,0,0,0.2);
+			display: grid;
+			margin-left: 1vh;
+			margin-right: 1vh;
+			margin-top: 60px;
+			padding: 20px;
+			transition: transform 0.4s ease;
+		}
+
+		.contact-form {
+			float: left;
+			width: 100%;
+			color: ghostwhite;
+		}
+		.iframe {
+			border: 0;
+			width: -webkit-fill-available;
+			display: flex;
+			height: 20vh;
+			border-radius: 5px;
+		}
+	
+	
+		html {
+			scroll-behavior: smooth;
+			scroll-padding-top: 15vh;
+			/* width: 153%; */
+		}
+  }
