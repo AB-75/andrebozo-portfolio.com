@@ -10,14 +10,17 @@
 	<body>
 		<header>
 			<!-- nav-bar -->
-			<a class="logo-a" id="logo-a" style="text-decoration: none; margin-left: 10px;"href="#"><h1 class="nav-logo" id="nav-logo"  >PORTFOLIO</h1></a>
+			<a class="logo-a" id="logo-a" style="text-decoration: none; margin-left: 10px;"href="#" onclick="document.getElementById('').scrollIntoView(); return false;">
+				<h1 class="nav-logo" id="nav-logo"  >PORTFOLIO</h1>
+			</a>
+
 			<nav id="nav-bar">
 				<ul>
-					<li><a href="#présentation" id="nav_bouton">presentation</a></li>
-					<li><a href="#competences" id="nav_bouton">competences</a></li>
-					<li><a href="#mes projets" id="nav_bouton">mes projets</a></li>
+					<li><a href="#présentation" id="nav_bouton" onclick="document.getElementById('présentation').scrollIntoView(); return false;">presentation</a></li>
+					<li><a href="#competences" id="nav_bouton" onclick="document.getElementById('competences').scrollIntoView(); return false;" >competences</a></li>
+					<li><a href="#mes projets" id="nav_bouton" onclick="document.getElementById('mes projets').scrollIntoView(); return false;" >mes projets</a></li>
 					<!-- <li><a href="#veille technologique" id="nav_bouton">veille technologique</a></li> -->
-					<li><a href="#contact" id="nav_bouton">contacts</a></li>
+					<li><a href="#contact" id="nav_bouton" onclick="document.getElementById('contacts').scrollIntoView(); return false;" >contacts</a></li>
 				</ul>
 			</nav>
 		</header>
