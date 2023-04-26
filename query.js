@@ -12,7 +12,12 @@ link.addEventListener('click', function(event) {
 	location.reload();
 });
 
-
+$(document).ready(function(){
+	$('.logo-a').click(function(){
+	  location.reload();
+	});
+  });
+  
 
 
 function move() {
