@@ -2,7 +2,7 @@
 document.querySelector('.scroll-down').addEventListener('click', function(event) {
 	event.preventDefault();
 	event.target.classList.add('disappear');
-	document.querySelector('#box2').scrollIntoView({ behavior: 'smooth' });
+	document.querySelector('#présentation').scrollIntoView({ behavior: 'smooth' });
 });
 
 
@@ -13,11 +13,7 @@ link.addEventListener('click', function(event) {
 });
 
 
-window.addEventListener('scroll', function() {
-    let introSection = document.querySelector('.intro_section');
-    let value = window.scrollY;
-    introSection.style.right = value * 2 + 'px';
-});
+
 
 function move() {
 	var progressBars = document.querySelectorAll('.progress');

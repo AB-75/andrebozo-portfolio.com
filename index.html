@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html>
-
 	<head>
 		<title>Acceuil</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<link rel="stylesheet" href="query.js">
 		<script src="query.js"></script>
 		<link rel="shortcut icon" type="image/png" href="logo-en-tete.png  ">
-		
 	</head>
 	<body>
 		<header>
@@ -18,237 +16,223 @@
 					<li><a href="#présentation" id="nav_bouton">presentation</a></li>
 					<li><a href="#competences" id="nav_bouton">competences</a></li>
 					<li><a href="#mes projets" id="nav_bouton">mes projets</a></li>
-					<li><a href="#veille technologique" id="nav_bouton">veille technologique</a></li>
-					<li><a href="#contact" id="nav_bouton">contact</a></li>
+					<!-- <li><a href="#veille technologique" id="nav_bouton">veille technologique</a></li> -->
+					<li><a href="#contact" id="nav_bouton">contacts</a></li>
 				</ul>
 			</nav>
 		</header>
-		<main>
+		<main  class="main" style="width: fit-content;">
 			<section class="intro">
-				<h1 class="intro_h1">BIENVENUE DANS MON <span class="underline">PORTFOLIO</span>.</h1>
-				<h2 class="intro_h2">
-					Je m'appelle
-					<span class="underline">agrou</span>
-					, étudiant en informatique et en développement web.
-					<br>
-					Et surtout, passionné en WEB-design !
-				</h2>
-				<p class="intro_p">
-					Ce site WEB a été créé exclusivement par mes soins en utilisant seulement du HTML / CSS / JS.
-					<br>
-					Laissez-vous guider afin d'y découvrir mes projets réalisés et les compétences que j'ai acquises au cours de mon cursus.
-				</p>
-				<a  href="#présentation"  class="scroll-down" id="scroll-down" ><img src="scroll.png" style="width: 6vh; filter: brightness(5);" alt=""></a>
-			</section>
-			<!-- PRESENTATION -->
-			<div class="box" id="présentation" >
-				<div style="display: inline-flex; transform: translate(10vh);" >
-					<img style="padding: 40px;border-radius: 45px;height: 50vh"  src="photo de profil.jpeg" alt="Photo de profil">
+				<div class="intro_div">
+					<h1 class="intro_h1">BIENVENUE DANS MON <span class="underline">PORTFOLIO</span>.</h1>
+					<h2 class="intro_h2">
+						Je m'appelle
+						<span class="underline">André Bozo</span>
+						, étudiant en informatique et en développement web. Et surtout, passionné en WEB-design !
+						<br>
+						Ce site WEB a été créé exclusivement par mes soins en utilisant seulement du HTML / CSS / JS.
+						<br>
+						Laissez-vous guider afin d'y découvrir mes projets réalisés et les compétences que j'ai acquises au cours de mon cursus.
+					</h2>
+					<!-- 
+					<h2 class="intro_p">Ce site WEB a été créé exclusivement par mes soins en utilisant seulement du HTML / CSS / JS.<br>Laissez-vous guider afin d'y découvrir mes projets réalisés et les compétences que j'ai acquises au cours de mon cursus.</h2>
+					 -->
+					<a  href="#présentation"  class="scroll-down" id="scroll-down" ><img src="scroll.png" style="width: 6vh; filter: brightness(5);" alt=""></a>
+				</div>
+			</section>	
+<!-- box1 (presentation) -->
+<div class="box" id="présentation" >
+				<div style="display: inline-flex;   width: -webkit-fill-available;" >
+					<!-- <img  src="photo de profil.jpeg" alt="Photo de profil"> -->
 					<div class="content">
 						<h1 class="PRESENTATION_h1" id="PRESENTATION_h1" >PRESENTATION</h1>
+						<hr class="hr_titre" style="margin-left: 0px;">
 						<p>
 							Bonjour, je m'appelle André, voici mon PORTFOLIO en tant qu'étudiant en BTS SIO.
 							<br>
-							<br>
 							Ma formation au CAMPUS MONTSOURIS a couvert un large éventail de sujets comme le développement applicatif, la gestion de bases de données et le développement-WEB, mais c'est surtout la partie
 							<span style="font-weight: bold; color: #0076ff;">CSS</span>
-							et l'aspect
+							 et l'aspect
 							<span style="font-weight: bold; color: #0076ff;">WEB design</span>
-							qui a su capter le plus mon intérêt et stimuler ma créativité !
+							   qui a su capter le plus mon intérêt et stimuler ma créativité !
 							<br>
 							J'aime créer des sites web esthétiques, fonctionnels et adaptatifs. Je suis perfectionniste et j'aime acquérir de nouvelles connaissances. Voici quelques exemples de mes réalisations en entreprise, lors de missions, en cours ou personnelles, que vous pouvez consulter sur mon portfolio.
 						</p>
 						<br>
+						<a href="#contact" id="bouton6">contactez-moi </a>
 						<br>
-						Ma formation au
-						<span style="text-decoration: underline;" > CAMPUS MONTSOURIS</span>
-						à couvret un large éventail de sujets comme le developpement applicatif, la gestion de bases de données et le developmment-WEB,  mais c'est sutout la partie
-						<span style="font-weight: bold; color: #0076ff;" > CSS</span>
-						et l'aspect
-						<span style=" font-weight: bold; color: #0076ff;"> WEB design</span>
-						qui a su capté le plus mon intert et stimuler ma créativité !
 						<br>
-						J'aime créer des sites web esthétiques, fonctionnels et adaptatifs. Je suis perfectionniste et j'aime acquérir de nouvelles connaissances. Voici quelques exemples de mes réalisations en entreprise, lors de missions, en cours ou personnelles, vous pouvez consulter sur mon portfolio.
-						<p>
-							<a href="#contact" id="bouton6">contactez-moi </a>
-							<br>
-							<br>
-							<br>
-							<br>
-							<a href="https://diplomeo.com/actualite-bts_sio_slam_ou_sisr" style="font-size: small; color: #4b4b4b; text-decoration: none; cursor: pointer;" > En savoir plus sur le BTS SIO ...</a>
-						</p>
-					</div>
+						<br>
+						<br>
+						<a href="https://diplomeo.com/actualite-bts_sio_slam_ou_sisr" style="font-size: small; color: #4b4b4b; text-decoration: none; cursor: pointer;" > En savoir plus sur le BTS SIO ...</a>
+					</p>
 				</div>
 			</div>
-			<div class="box2" id="competences">
-				<div class="content">
-					<!-- barres de competences  -->
-					<div class="texte_comptetnces" style="display: inline-flex;">
-						<div>
-							<h1 class="COMPETENCES_h1" id="COMPETENCES_h1">MES COMPETENCES  </h1>
-							<p style="font-size: large; padding-left: 40px; margin-top: 0; font-size: large;padding-left: 40px;margin-top: 20px; padding-right: 40px;">
-								Au cours de ma formation, j’ai pu acquérir des compétences diverses dans le domaine de l’informatique et de la programmation, ainsi que dans d’autres domaines :
-								<br>
-								<br>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-								<br>
-								 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-								 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
-								Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-
-								Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-							</p>
-						<div style="display: inline-flex;" >
-							<img class="desktop-img" src="desktop12.jpg" alt="">
-							<div class="barres-pourcentage" >
-								<p>
-									HTML
-								</p>
-								<div class="my-progress-bar">
-									<div id="myBar1" class="progress" style="width:0%"></div>
-								</div>
-								<p>
-									CSS
-								</p>
-								<div class="my-progress-bar">
-									<div id="myBar2" class="progress" style="width:0%"></div>
-								</div>
-								<p>
-									WORDPRESS
-								</p>
-								<div class="my-progress-bar">
-									<div id="myBar3" class="progress" style="width:0%"></div>
-								</div>
-								<p>
-									JS
-								</p>
-								<div class="my-progress-bar">
-									<div id="myBar4" class="progress" style="width:0%"></div>
-								</div>
-								<p>
-									SQL
-								</p>
-								<div class="my-progress-bar">
-									<div id="myBar5" class="progress" style="width:0%"></div>
-								</div>
-								<P>
-									autres ( excel, 365, help-desk ) 
-								</p>
-								<div class="my-progress-bar">
-									<div id="myBar6" class="progress" style="width:0%"></div>
-								</div>
-								<br>
-								<a id="bouton6"   onclick="move()"> cliquez ici voir le visuel de mes competences</a>
-
-					</div>	
-
-							</div>
-
-						</div>
-
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="box3" id="mes projets">
+</div>
+<!-- box2 (competences) -->
+<div class="box2" id="competences">
 			<div class="content">
-				<div style="">
-					<h1 class="COMPETENCES_h1" id="COMPETENCES_h1"  >MES PROJETS</h1>
-					<p style="padding-left: 40px;" >
-						Au cours de ma formation, j’ai pu acquérir des compétences diverses dans le domaine de l’informatique et de la programmation, ainsi que dans d’autres domaines :
+				<!-- barres de competences  -->
+				<div class="texte_comptetnces" style="display: inline-flex;">
+					<div>
+						<h1 class="COMPETENCES_h1" id="COMPETENCES_h1">COMPETENCES  </h1>
+						<hr class="hr_titre">
+						<br>
 					</p>
-				</div>
-				<!-- photo projet  -->
-				<br><br><br>
-
-					<div class="grid-block">
-						<a class="tile-link" href="#"><img class="tile-img tile-img1" src="https://lh3.googleusercontent.com/pw/ACtC-3eqDpYXSzQK9Gr8Dm6pRBTXg65teqvPUlndvrG31BEmbHGYSiGja4ZhpI86_b5pYG_nWHZvi0-a2svpmvqtfGHSqLAypliNdl9vI-xGKT0XixvVSzroZ0e7HXFeyVoNyU5XMuMoEzf5f6VgQbmIO2yr=w1384-h791-no" alt="Image"></a>
-						<a class="tile-link" href="#"><img class="tile-img tile-img2" src="https://lh3.googleusercontent.com/pw/ACtC-3eO9L51TGiTghLao-VLNhO_C0egdgv7NfamlpdYbMAKCfXNlkk7WPPcxMJTaU9hO-HNnTqUivtavZ-6iK9mzoq0Qf3kJ5MAcnCoDUqbzd8VzpFKhu3mqDYZBG0KNGVxNHSEUwUiTxCUEFf_yFnNNLL0=w1384-h791-no" alt="Image"></a>
-						<a class="tile-link" href="#"><img class="tile-img tile-img3" src="https://lh3.googleusercontent.com/pw/ACtC-3dhqk2CMZiOyFNPfjfffFIRIp1r9XjSNhfWHXk3gHDNf0hGwwWtXlQbtTf7DBp9t_KnCVull_WGpXNDVRtLkslw1qskUAjbSMEilFituKSeJVKqzVbsTFOeLfvd92nowevb7EGG3Pno37_WfsShZnYP=w1384-h791-no" alt="Image"></a>
-						<a class="tile-link" href="#"><img class="tile-img tile-img4" src="https://lh3.googleusercontent.com/pw/ACtC-3eYKEnL-pUFhF9aCKHKKRNrWEyJJ-7SCD8-EJLpBkVKp6jIHEKvBGiOL0hPW5f6UAcyoxaR06XRDUayk0NaQMxpSWCjnNyqdypHsIzrPfSwQZmOBR4-i3VCc0Ywg9CUmFYv2vs-rbmEmio2-4ZUuokZ=w1384-h791-no" alt="Image"></a>
+					<div >
+						<div class="barres-pourcentage" >
+							<p>
+								HTML
+							</p>
+							<div class="my-progress-bar">
+								<div id="myBar1" class="progress" style="width:0%"></div>
+							</div>
+							<p>
+								CSS
+							</p>
+							<div class="my-progress-bar">
+								<div id="myBar2" class="progress" style="width:0%"></div>
+							</div>
+							<p>
+								WORDPRESS
+							</p>
+							<div class="my-progress-bar">
+								<div id="myBar3" class="progress" style="width:0%"></div>
+							</div>
+							<p>
+								JS
+							</p>
+							<div class="my-progress-bar">
+								<div id="myBar4" class="progress" style="width:0%"></div>
+							</div>
+							<p>
+								SQL
+							</p>
+							<div class="my-progress-bar">
+								<div id="myBar5" class="progress" style="width:0%"></div>
+							</div>
+							<P>
+								autres ( excel, 365, help-desk )
+							</p>
+							<div class="my-progress-bar">
+								<div id="myBar6" class="progress" style="width:0%"></div>
+							</div>
+							<br>
+							<a id="bouton6"   onclick="move()"> cliquez ici voir le visuel de mes competences</a>
+						</div>
 					</div>
-
-			</DIV>
+				</div>
+				<!-- 
+				<img class="desktop-img" src="mon bureau.png" alt="">
+				 -->
+			</div>
 		</div>
-		<div id="contact"  class="contact">
-			<div id="contact-form" class="contact-form" >
-				<h1 class="contact_h1">ME CONTACTER </h1>
-				<p style="padding-left: 40px;" >
-					Des questions, des suggestions...  Je suis là pour ça, surtout n'hésitez pas !
-				</p>
-				<form action="send_email.php" class="form_contact" method="post">
-					<label for="email">E-Mail</label>
-					<input type="email" id="email" name="email" placeholder="Hello"  required>
-					<label for="message">Message</label>
-					<textarea id="message" name="message" placeholder="wolrd..." required></textarea>
+</div>
+</div>
+<!-- box3 (mes projets) -->
+<div class="box3" id="mes projets">
+	<div class="content">
+		<div>
+			<h1 class="COMPETENCES_h1" id="COMPETENCES_h1"  >PROJETS</h1>
+			<hr class="hr_titre">
+		</div>
+		<!-- <p style="padding-left: 40px;" >
+			Au cours de ma formation, j’ai pu acquérir des compétences diverses dans le domaine de l’informatique et de la programmation, ainsi que dans d’autres domaines :
+		</p> -->
+		<!-- photo projet  -->
+		<h2 class="h2_box3" >WEB design</h2>
+		<div class="grid-block">
+			<a class="tile-link" href="#"><img class="tile-img tile-img2" src="projet_portfoliojpg.jpg" alt="Image"></a>
+			<a class="tile-link" href="https://belle-table-23.000webhostapp.com/index.php"><img class="tile-img tile-img1" src="projet-belletablejpg.jpg" alt="Image"></a>
+			<a class="tile-link" href="https://caninegarde.com/"><img class="tile-img tile-img3" src="projet_caninegardejpg.jpg" alt="Image"></a>
+		</div>
+		<h2 class="h2_box3" >DEV</h2>
+		<div class="grid-block">
+			<a class="tile-link" href="#"><img class="tile-img tile-img2" src="projet_python.jpg" alt="Image"></a>
+			<a class="tile-link" href="#"><img class="tile-img tile-img1" src="csahrp_projet.jpg" alt="Image"></a>
+			<a class="tile-link" href="#"><img class="tile-img tile-img3" src="SQL_projet.jpg" alt="Image"></a>
+		</div>
+	</div>
+</div>
+<!-- box4 (contacts) -->
+<div class="box4" id="contact"  >
+	<div id="contact-form" class="contact-form" >
+		
+		<div >
+			<h1 class="contact_h1">CONTACS </h1>
+			<hr class="hr_titre">
+			<!-- <p style="padding-left: 40px;" >
+				Des questions, des suggestions...  Je suis là pour ça, surtout n'hésitez pas !
+			</p> -->
+		</div>
+	
+
+	<div style="display: inline-flex;  background-color: #101010b8;   border-radius: 5px;">
+		<div>
+			<form action="send_email.php" class="form_contact" method="post">
+
+					<!-- <label for="email">E-Mail</label> -->
+					<input type="email" id="email" name="email" placeholder="votre e-mail ..."  required>
+
+					<!-- <label for="message">Message</label> -->
+					<textarea id="message" name="message" placeholder="votre message ..." required></textarea>
 					<button type="submit">Envoyer</button>
-				</form>
-			</div>
-			<!-- HTML code for the Google map -->
-			<div class="map-box">
-				<p style="font-family: sans-serif; font-weight: bold; color: #ffffff;">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.999836971707!2d2.294481315674771!3d48.85837007928766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e296f9aa34b%3A0x9c8f0eeeff4b710f!2sEiffel%20Tower%2C%20Paris%2C%20France!5e0!3m2!1sen!2sca!4v1639502544408!5m2!1sen!2sca" width="500" height="400" style="border:0; width: 150%; display: flex;" allowfullscreen="no" loading="lazy"></iframe>
-					Paris, Ile-de-france 75000.
+
+			</form>
+		</div>
+	<!-- HTML code for the Google map -->
+	<div>
+			<iframe class="iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.999836971707!2d2.294481315674771!3d48.85837007928766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e296f9aa34b%3A0x9c8f0eeeff4b710f!2sParis%2C%20France!5e0!3m2!1sen!2sca!4v1639502544408!5m2!1sen!2sca!" width="0" height="0" allowfullscreen="no" loading="lazy"></iframe>
+			
+			<!-- <p style="font-family: sans-serif; font-weight: bold; color: #ffffff;">Paris, Ile-de-france 75000.</p> -->
+		</div>
+	</div>
+</div>
+</main>
+<!-- footer -->
+<footer><div class="footer-clean">
+	<footer>
+		<div class="container">
+			<div class= "services" id="footer_p" style=" padding: 15px;">
+				<p style="    transform: translateX(81Vh);" >
+					<span style=" font-weight: bold; font-size: larger;" >pour plus d'informations :</span>
+				</p>
+				<p style="    text-align: center;	transform: translateX(0%);" >
+					<span class="footer_span">  mail : andre.b-pro@hotmail.com </span>
+					<span class="footer_span" > linked-in : andre bozo </span>
+					<span class="footer_span" > instagram : andre bozo </span>
+					<span class="footer_span" > tel  : 06 26 95 92 48 </span>
+				</p>
+				<div class="images_footer" >
+					<img class="img_footer3" src="logo-campus-montsouris.png"  alt="">
+					<img class="img_footer1" src="R.jpeg" alt="">
+					<img class="img_footer2" src="bpi france logo.jpeg" alt="">
+				</div>
+
+				<p class="copy_footer" >
+					PORTFOLIO | André Bozo 2023 &copy;
 				</p>
 			</div>
-		</div>
-	</main>
-	<!-- footer -->
-	<footer>
-		<div class="footer-clean">
-			<footer>
-				<h3 class="footer_h3"> PORTFOLIO </h3>
-				<div class="container">
-					<div class= "services" id="footer_p" style=" padding: 15px;">
-						<p>
-							<span style=" font-weight: bold; font-size: larger;" >pour plus d'informations :</span>
-						</p>
-						<p style="display: grid;" >
-							<span class="footer_span">  mail : andre.b-pro@hotmail.com </span>
-							<span class="footer_span" > linked-in : andre bozo </span>
-							<span class="footer_span" > instagram : andre bozo </span>
-							<span class="footer_span" > tel  : 06 26 95 92 48 </span>
-						</p>
-						<div class="images_footer" >
-							<img class="img_footer3" src="logo-campus-montsouris.png"  alt="">
-							<img class="img_footer1" src="R.jpeg" alt="">
-							<img class="img_footer2" src="bpi france logo.jpeg" alt="">
-						</div>
-					</div>
-					<div class="row justify-content-center">
-						<div class="socials_links">
-							<a href="#"><i class="icon ion-social-facebook"></i></a>
-							<a href="#"><i class="icon ion-social-twitter"></i></a>
-							<a href="#"><i class="icon ion-social-snapchat"></i></a>
-							<a href="#"><i class="icon ion-social-instagram"></i></a>
-						</div>
-					</div>
-					<div class="row">
-						<div class="ccareers_h3">
-							<ul>
-								<li><a href="#">accueil</a></li>
-								<li><a href="#box2">à propos</a></li>
-								<li><a href="#contact">contact</a></li>
-								<li><a href="#">mes projets</a></li>
-								<li><a href="#">veille technologique</a></li>
-								<li><a href="https://www.yumens.fr/expertise/ux-design/web-design/definition/">web design</a></li>
-								<li><a href="https://diplomeo.com/actualite-bts_sio_slam_ou_sisr">bts sio</a></li>
-								<li><a href="https://www.campusmontsouris.fr/">campus-montsouris</a></li>
-								<li><a href="#https://www.cnil.fr/fr/comprendre-le-rgpd">RGPD</a></li>
-							</ul>
-						</div>
-					</div>
-					<p class="PORTFOLIO_copy_right">
-						PORTFOLIO | André Bozo 2023 &copy;
-					</p>
+			<!-- <div class="row">
+				<div class="ccareers_h3">
+					<ul>
+						<li><a href="#">accueil</a></li>
+						<li><a href="#box2">à propos</a></li>
+						<li><a href="#contact">contact</a></li>
+						<li><a href="#">mes projets</a></li>
+						<li><a href="#">veille technologique</a></li>
+						<li><a href="https://www.yumens.fr/expertise/ux-design/web-design/definition/">web design</a></li>
+						<li><a href="https://diplomeo.com/actualite-bts_sio_slam_ou_sisr">bts sio</a></li>
+						<li><a href="https://www.campusmontsouris.fr/">campus-montsouris</a></li>
+						<li><a href="#https://www.cnil.fr/fr/comprendre-le-rgpd">RGPD</a></li>
+					</ul>
 				</div>
-			</div>
-		</body>
-	</footer>
+			</div> -->
+
+		
+</div>
+</body>
+</footer>
 </html>
 </body>
 </html>
