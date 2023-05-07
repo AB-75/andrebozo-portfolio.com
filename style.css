@@ -277,8 +277,6 @@ h3
 	border-radius: 5px;
 	padding: 3.5px 5px;
 	text-decoration: none;
-	/* margin: 1vh; */
-	/* margin-left: 0; */
 }
 
 #bouton6:hover
@@ -406,6 +404,13 @@ main .box p
 	border-radius: 5px;
 }
 
+.compet_p{
+	text-decoration: underline;
+}
+
+
+
+
 .barres-pourcentage
 {
 	/* padding: 5vh; */
@@ -418,7 +423,7 @@ main .box p
 	height: 2vh;
 	background-color: #ffffff05;
 	border-radius: 5px;
-	margin-bottom: 10px;
+	margin-bottom: 9px;
 	width: -webkit-fill-available;
 	display: flex;
 }
@@ -469,7 +474,7 @@ main .box2 h3
 main .box2 p
 {
 	margin-bottom: 0;
-	font-size: large;
+	/* font-size: large; */
 	padding: 0;
 	margin: 0;
 	display: contents;
@@ -549,7 +554,7 @@ main .box2 p
 	filter: none;
 	opacity: 2;
 	transition: .4s;
-	transform: scale(1.01);
+	transform: scale(1.05);
 
 }
 
@@ -584,12 +589,12 @@ main .box2 p
 /* nous contacter  */
 
 #email{
-	width: 21vh;
+	width: auto;
 	height: 3.5vh;
 	border-radius: 5px;
 	border: none;
 	outline: none;
-	margin-right: 69vh;
+	margin-right: 75vh;
 }
 
 #message
@@ -600,8 +605,8 @@ main .box2 p
 	border-radius: 5px;
 	outline: none;
 	margin: 1vh;
-	margin-left: 66vh;
 	margin-left: 0;
+	width: -webkit-fill-available;
 }
 
 
@@ -749,12 +754,15 @@ main .box2 p
 .iframe
 {
 	border: 0;
-	margin-top: 1vh;
-	margin-bottom: 4vh;
-	height: 21VH;
-	width: 407Px;
-	border-radius: 5px;
+	margin-top: 2vh;
+	margin-bottom: 0vh;
 	margin-right: 1vh;
+
+	border: 0;
+	width: -webkit-fill-available;
+	display: flex;
+	height: 20vh;
+	border-radius: 5px;
 }
 
 /* FOOTER */
@@ -1108,15 +1116,6 @@ element.style
 		}
 
 
-		.iframe
-		{
-			border: 0;
-			width: -webkit-fill-available;
-			display: flex;
-			height: 20vh;
-			border-radius: 5px;
-		}
-
 	html
 	{
 		scroll-behavior: smooth;
@@ -1127,21 +1126,3 @@ element.style
 
 }
 
-@media only screen and (max-width: 767px) {
-	/* styles CSS pour les téléphones mobiles */
-main{
-	max-width: 100%;
-}
-
-main .box
-{
-	background: #1e1e1e;
-	border-radius: 5px;
-	box-shadow: 0 0 10px rgba(0,0,0,0.2);
-	transition: transform 0.4s ease;
-	margin-left: 0vh;
-	margin-right: 0vh;
-	margin-top: 60px;
-	width: auto;
-}
-  }
