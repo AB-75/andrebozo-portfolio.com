@@ -4,6 +4,12 @@
 	/* box-shadow: 0 0 0 3px #62f495 inset; */
 }
 
+	html
+	{
+		scroll-behavior: smooth;
+		scroll-padding-top: 15vh;
+	}
+
 body
 {
 	font-family: Arial, sans-serif;
@@ -1116,11 +1122,7 @@ element.style
 		}
 
 
-	html
-	{
-		scroll-behavior: smooth;
-		scroll-padding-top: 15vh;
-	}
+
 
 
 
