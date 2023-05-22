@@ -41,34 +41,17 @@ body
 }
 
 /* intro */
-.intro
-{
-	/* border-radius: 5px; */
-	/* display: flex; */
-	/* position: relative; */
-	/* width: auto; */
-	/* background: linear-gradient(56deg, rgba(0,117,255,1) 20%, rgb(255 0 215) 100%); */
-	/* padding: 50px; */
-	/* height: 92vh; */
-}
 
-.intro_div
-{
-	/* display: inline-block; */
-	/* padding-top: 17vh; */
-}
+
 
 .intro_h1
 {
-	/* font-size: -webkit-xxx-large; */
 	animation: fadeIn;
 	animation-duration: 3s;
 	color: #ffffff;
 	color: white;
 	font-size: 6vh;
 	position: absolute;
-	/* background-attachment: fixed; */
-	/* transform: translate(40%,20vh); */
 	left: 20%;
 	top: 20vh;
 	opacity: 1;
@@ -142,15 +125,6 @@ body
 
 } 
 
-
-
-/* @media screen and (max-width: 100px)
-{
-	body
-	{
-		background-attachment: scroll;
-	}
-} */
 
 /* --- scroll bar + auto defielment --- */
 ::-webkit-scrollbar
@@ -346,6 +320,18 @@ nav li:hover
 	width: auto;
 }
 
+
+.cmont
+{
+	text-decoration: none;
+	color: white;
+}
+
+.cmont:hover
+{
+	color: #4b4b4b;
+}
+
 main .box:hover
 {
 	transform: scale(1.02);
@@ -444,7 +430,12 @@ main .box p
 {
 	height: 100%;
 	border-radius: 5px;
-	background: linear-gradient(94deg, rgba(128,180,255,1) 0%, rgba(27,121,255,1) 50%, rgba(27,121,255,1) 100%);
+	background: linear-gradient(
+		94deg, 
+			rgba(128,180,255,1) 0%, 
+			rgba(27,121,255,1) 50%, 
+			rgba(27,121,255,1) 100%
+	);
 	animation-name: slideIn;
 	animation-duration: 2s;
 }
@@ -685,9 +676,9 @@ main .box2 p
 	background-color: #868b9210;
 }
 
-.contactform-p{
-
-	DISPLAY: INLINE-GRID; transform: translateX(50%);
+.contactform-p
+{ 
+	DISPLAY: INLINE-GRID;
 }
 
 .google-map
@@ -786,29 +777,27 @@ main .box2 p
 									/* FOOTER */
 .images_footer
 {
-	display: flex;
+	display: inline-flex;
 	margin: 0;
 	padding: 0;
-	width: 80vh;
-	margin-left: 43%;
+	/* width: 80vh; */
+	height: 6vh;
 	overflow-x: hidden;
 }
 
 .img_footer1
 {
-	width: 10%;
+	/* width: 10%; */
 }
 
 .img_footer2
 {
-	width: 13%;
 	margin: 0;
 	padding: 0;
 }
 
 .img_footer3
 {
-	width: 10%;
 	background-color: white;
 }
 
@@ -872,12 +861,8 @@ main .box2 p
 }
 
 .copy_footer{
-
-/* transform: translateX(80vh); */
-
-margin-left: 42%;
-
-margin-bottom: 0;
+margin-bottom: 0;
+padding: 2vh;
 }
 .socials_links
 {
@@ -895,6 +880,13 @@ element.style
 	transform: translate(90%);
 }
 
+.socials_a{
+	text-decoration: none;
+	color: white;
+}
+
+
+
 .ccareers_h3
 {
 	position: absolute;
@@ -904,10 +896,7 @@ element.style
 	background: #10101000;
 }
 
-.footer-clean p.PORTFOLIO_copy_right
-{
-	left: 40%;
-}
+
 
 .footer_span
 {
@@ -1049,9 +1038,7 @@ element.style
 			display: none;
 		}
 
-		.my-progress-bar
-		{
-		}
+
 
 	.box3
 	{
@@ -1059,17 +1046,9 @@ element.style
 		margin-right: 5vh;
 	}
 
-	.grid-block {
-		/* flex-direction: column; */
-	}
 
 
-		.tile-link {
-			/* width: calc(40% - 8.5vh); */ 
-			
-			/* Autres styles... */
-			/* width: -webkit-fill-available; */
-		}
+		
 
 		#contact
 		{
