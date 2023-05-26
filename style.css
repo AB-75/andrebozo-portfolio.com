@@ -956,10 +956,14 @@ main .box2 p
 			width: 100%;
 			color: ghostwhite;
 		}
-	
+
 		header{
 			justify-content: space-around
 			;
+		}
+
+		#nav-bar a {
+			padding: 10px;
 		}
 }
 
