@@ -879,6 +879,15 @@ main .box2 p
 		padding-left: 1vh;
 	}
 
+	.intro_h1{
+		left: 0;
+	}
+
+	.gradiant{
+		left: 4vh;
+	}
+	
+
 	.intro_h2 {
 		color: white;
 		position: absolute;
