@@ -880,7 +880,12 @@ main .box2 p
 	}
 
 	.intro_h1{
-		left: 0;
+		left: 1vh;
+		text-align: none;
+	}
+
+	.intro_h2{
+		left: 1vh;
 	}
 
 	.gradiant{
@@ -889,17 +894,10 @@ main .box2 p
 	
 
 	.intro_h2 {
-		color: white;
-		position: absolute;
-		font-size: 3vh;
-		animation-name: slideUp;
-		animation-delay: .5s;
-		animation-duration: 3s;
+		
 		opacity: 0;
-		animation-fill-mode: forwards;
 		top: 20vh;
-		z-index: 3;
-		max-width: 80%;
+		text-align: inherit;
 	}
 
 
