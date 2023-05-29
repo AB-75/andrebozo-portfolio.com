@@ -1,22 +1,31 @@
+window.addEventListener('DOMContentLoaded', () => {
+	const head = document.querySelector('header');
+	const startColor = [25, 25, 25, 0]; 
+	const endColor = [30, 30, 30, 1]; 
+	const height = 500;
+  
+	window.addEventListener('scroll', () => {
+	  const scrollPosition = window.scrollY;
+	  const percentage = Math.min(scrollPosition / height, 5);
+	  const newColor = startColor.map((value, index) => {
+		return value + (endColor[index] - value) * percentage;
+	  });
+	  head.style.backgroundColor = `rgb(${newColor.join(',')})`;
+	});
+  });
+  
 
-document.querySelector('.scroll-down').addEventListener('click', function(event) {
-	event.preventDefault();
-	event.target.classList.add('disappear');
-	document.querySelector('#présentation').scrollIntoView({ behavior: 'smooth' });
-});
 
 
+// autr
 var link = document.querySelector('#nav-logo');
 link.addEventListener('click', function(event) {
 	event.preventDefault();
 	location.reload();
 });
 
-$(document).ready(function(){
-	$('.logo-a').click(function(){
-	  location.reload();
-	});
-  });
+
+
   
 
 
@@ -31,7 +40,5 @@ function move() {
 
 
 
-document.getElementById("nav_bouton").addEventListener("click", function(event){
-	event.preventDefault();
-	window.history.replaceState(null, null, event.target.href);
-  });
+
+
