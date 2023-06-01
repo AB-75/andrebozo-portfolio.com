@@ -110,7 +110,7 @@ body
 .blur{
 	height: -webkit-fill-available;
 	width: -webkit-fill-available;
-	backdrop-filter: blur(10vh);
+	backdrop-filter: blur(10rem);
 	/* filter: blur(64.5vh); */
 	top: 0;
 	left: 0;
