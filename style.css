@@ -1012,7 +1012,7 @@ main .box2 p
 			overflow: hidden;
 		}
 		.blur{
-			backdrop-filter: blur(50vh);
+			backdrop-filter: blur(30vh);
 		}
 }
 
