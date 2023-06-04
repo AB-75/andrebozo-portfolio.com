@@ -110,7 +110,7 @@ body
 .blur{
 	height: -webkit-fill-available;
 	width: -webkit-fill-available;
-	backdrop-filter: blur(10rem);
+	backdrop-filter: blur(10vh);
 	/* filter: blur(64.5vh); */
 	top: 0;
 	left: 0;
@@ -209,6 +209,18 @@ header
 	background-color: #83848647;
 }
 
+
+ul
+{
+	margin: 0;
+	list-style: none;
+	color: #4b4b4b;
+	padding: 15px;
+	margin-right: 2px;
+	transition: ease;
+	display: contents;
+}
+
 #PRESENTATION_h1
 {
 	color: white;
@@ -224,16 +236,7 @@ header
 	margin: 0;
 }
 
-ul
-{
-	margin: 0;
-	list-style: none;
-	color: #4b4b4b;
-	padding: 15px;
-	margin-right: 2px;
-	transition: ease;
-	display: contents;
-}
+
 
 #bouton6
 {
@@ -880,7 +883,12 @@ main .box2 p
 	}
 
 	.intro_h1{
-		
+		left: 1vh;
+		text-align: none;
+	}
+
+	.intro_h2{
+		left: 1vh;
 	}
 
 	.gradiant{
@@ -889,6 +897,9 @@ main .box2 p
 	
 
 	.intro_h2 {
+		opacity: 0;
+		top: 20vh;
+		text-align: inherit;
 	}
 
 
@@ -995,6 +1006,19 @@ main .box2 p
 
 		#message {
 			width: fit-content;
+		}
+
+		.gradiant{
+			background: linear-gradient(214deg, rgba(255,0,215,1) 20%, rgba(34,27,255,1) 86%);
+			height: 100%vh;
+			aspect-ratio: 1;
+			z-index: 1;
+			position: absolute;
+			border-radius: 0%;
+			top: 100%;
+			left: 0vh;
+			
+			overflow: hidden;
 		}
 }
 
