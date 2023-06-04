@@ -1009,8 +1009,10 @@ main .box2 p
 			z-index: -10;
 			top: 0;
 			left: 0;
-			
 			overflow: hidden;
+		}
+		.blur{
+			backdrop-filter: blur(50vh);
 		}
 }
 
