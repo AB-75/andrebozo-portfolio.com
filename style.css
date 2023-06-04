@@ -860,7 +860,7 @@ main .box2 p
 }
 
 
-@media only screen and (max-width: 1700px)
+@media only screen and (max-width: 414px)
 {
 	/* For mobile phones: */
 	[class*="col-"]
