@@ -883,23 +883,17 @@ main .box2 p
 	}
 
 	.intro_h1{
-		left: 1vh;
+		left: 2vh;
 		text-align: none;
 	}
 
-	.intro_h2{
-		left: 1vh;
-	}
-
-	.gradiant{
-		left: 4vh;
-	}
 	
 
 	.intro_h2 {
 		opacity: 0;
 		top: 20vh;
 		text-align: inherit;
+		left: 2vh;
 	}
 
 
