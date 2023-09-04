@@ -1004,6 +1004,7 @@ main .box2 p
 		}
 		.blur{
 			backdrop-filter: blur(30vh);
+			margin-left: 20px;
 		}
 }
 
