@@ -1,0 +1,4 @@
+
+
+gradaint fond-ecran:
+linear-gradient(56deg, rgba(0,117,255,1) 20%, rgb(255 0 215) 100%)
