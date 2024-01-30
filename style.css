@@ -7,12 +7,15 @@ html
 {
 	scroll-behavior: smooth;
 	scroll-padding-top: 15vh;
+	height: 100%;
+
 }
 
 .main
 {
 	width: 100%;
 	height: 100%;
+	
 	/* width: auto; */
 }
 
@@ -25,6 +28,7 @@ body
 	bottom: 0;
 	background: #121212;
 	overflow-x: hidden;
+	
 }
 												/* intro */
 .intro_div{
@@ -111,13 +115,15 @@ body
 }
 
 .blur{
-	height: 500%;
-    width: -webkit-fill-available;
-    backdrop-filter: blur(15vh);
-    top: 0;
-    left: 0;
-    position: absolute;
-    z-index: -5;
+	min-height: 100%;
+	width: -webkit-fill-available;
+	backdrop-filter: blur(15vh);
+	top: 0;
+	/* aspect-ratio: 1; */
+	/* z-index: -10; */
+	left: 0;
+	position: fixed;
+	z-index: -5;
 }
 
 /* paragraphe intro du site INTRO_P */
@@ -1029,34 +1035,43 @@ main .box2 p
 		}
 
 		.gradiant{
-			background: linear-gradient(214deg, rgba(255,0,215,1) 20%, rgba(34,27,255,1) 86%);
+			/* background: linear-gradient(360deg, rgba(255,0,215,1) 20%, rgba(34,27,255,1) 86%); */%); */%); */%); */
 			height: 100%;
 			aspect-ratio: 1;
 			z-index: -10;
-			top: 0;
+			/* top: 0; */
 			left: 0;
 			overflow: hidden;
-			animation: none;
+			/* animation: none; */
+			animation: rotate 40S infinite;
 		}
 		.blur{
-			backdrop-filter: blur(30vh);
+			backdrop-filter: blur(25vh);
+			/* min-height: 100%; */
 		}
 
 		.box4 {
-background: #1e1e1e;
-margin-left: 5vh;
-margin-right: 5vh;
+
+background: #1e1e1e;
+
+margin-left: 5vh;
+
+margin-right: 5vh;
 	
 
 
 		.contactform-p {
-display: block;
-width: -webkit-fill-available;
+
+display: block;
+
+width: -webkit-fill-available;
 
 }
 ;
-width: -webkit-fill-available;
-padding: 3vh;
+
+width: -webkit-fill-available;
+
+padding: 3vh;
 }
 
 
