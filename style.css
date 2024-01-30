@@ -115,8 +115,6 @@ body
 }
 
 .blur{
-	-webkit-backface-visibility: hidden;
-	-moz-backface-visibility: hidden;
 	min-height: 100%;
 	width: -webkit-fill-available;
 	backdrop-filter: blur(15vh);
@@ -1037,24 +1035,20 @@ main .box2 p
 		}
 
 		.gradiant{
-			/* background: linear-gradient(360deg, rgba(255,0,215,1) 20%, rgba(34,27,255,1) 86%); */%); */%); */%); */
+			background: linear-gradient(295deg, rgba(255,0,215,1) 10%, rgba(34,27,255,1) 90%);%); */%); */%); */
 			height: 100%;
 			aspect-ratio: 1;
 			z-index: -10;
-			/* top: 0; */
+			top: 0;
+			height: 100%;
 			left: 0;
+			border-radius: 0;
 			overflow: hidden;
-			/* animation: none; */
-			animation: rotate 40S infinite;
+			animation: none;
+			/* animation: rotate 40S infinite; */
 		}
 		.blur{
-			/* backdrop-filter: blur(25vh); */
 			backdrop-filter: blur(25vh);
-			-webkit-backface-visibility: hidden;
-			-moz-backface-visibility: hidden;
-			-webkit-transform: translate3d (0, 0, 0);
-			-moz-transform: translate3d (0, 0, 0);
-			transform: translate3d (0, 0, 0);
 		}
 
 		.box4 {
