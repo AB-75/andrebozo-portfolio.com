@@ -1048,10 +1048,13 @@ main .box2 p
 			animation: rotate 40S infinite;
 		}
 		.blur{
+			/* backdrop-filter: blur(25vh); */
 			backdrop-filter: blur(25vh);
-			/* min-height: 100%; */
 			-webkit-backface-visibility: hidden;
 			-moz-backface-visibility: hidden;
+			-webkit-transform: translate3d (0, 0, 0);
+			-moz-transform: translate3d (0, 0, 0);
+			transform: translate3d (0, 0, 0);
 		}
 
 		.box4 {
