@@ -11,7 +11,9 @@ html
 
 .main
 {
-	width: auto;
+	width: 100%;
+	height: 100%;
+	/* width: auto; */
 }
 
 body
@@ -276,15 +278,17 @@ nav li:hover
 													/* box 1 (a propos) */
 .box
 {
-	background: #1e1e1eb3;
-	border-radius: 5px;
-	box-shadow: 0 0 10px rgba(0,0,0,0.2);
-	transition: transform 0.4s ease;
-	margin-left: 35vh;
-	margin-right: 35vh;
-	margin-top: 10vh;
-	padding: 5vh;
 	width: auto;
+    color: white;
+    background: #1e1e1eb3;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    display: -webkit-inline-box;
+    margin-left: 35vh;
+    margin-right: 35vh;
+    margin-top: 60px;
+    padding: 5vh;
+    transition: transform 0.4s ease;
 }
 
 .cmont
@@ -450,15 +454,17 @@ main .box2 p
 													/* box 3 (projets) */
 .box3
 {
+	width: auto;
+	color: white;
 	background: #1e1e1eb3;
 	border-radius: 5px;
 	box-shadow: 0 0 10px rgba(0,0,0,0.2);
-	transition: transform 0.4s ease;
+	display: -webkit-inline-box;
 	margin-left: 35vh;
 	margin-right: 35vh;
 	margin-top: 60px;
 	padding: 5vh;
-	width: auto;
+	transition: transform 0.4s ease;
 }
 
 .h2_box3
@@ -526,7 +532,7 @@ main .box2 p
 										/* nous contacter  */
 
 #name{
-	width: 25vh;
+	width: -webkit-fill-available;
 	height: 3vh;
 	border-radius: 5px;
 	border: none;
@@ -538,7 +544,7 @@ main .box2 p
 	border-radius: 5px;
 	border: none;
 	outline: none;
-	width: 25vh;
+	width: -webkit-fill-available;
 	height: 3vh;
 	margin-top: 2vh;
 }
@@ -548,7 +554,7 @@ main .box2 p
 	resize: none;
 	height: 10vh;
 	font-family: sans-serif;
-	width: 75vh;
+	width: -webkit-fill-available;
 	border-radius: 5px;
 	border: none;
 	outline: none;
@@ -623,6 +629,8 @@ main .box2 p
 {
 	display: flex;
 	height: 10vh;
+	/* width: 100%; */
+	align-content: center;
 }
 
 .google-map
@@ -695,7 +703,7 @@ main .box2 p
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100%;
+	width: webbkit;
 	height: 108%;
 	padding-top: 40px;
 	border:0;
@@ -708,10 +716,12 @@ main .box2 p
 	margin-bottom: 0vh;
 	margin-right: 1vh;
 	border: 0;
-	width: -webkit-fill-available;
+	/* width: auto; */
 	display: flex;
 	height: 25vh;
+	width: 100%;
 	border-radius: 5px;
+	position: relative;
 }
 
 									/* FOOTER */
@@ -849,6 +859,7 @@ main .box2 p
 	}
 }
 
+                   		/* media query @mode telephone */
 
 @media only screen and (max-width: 414px)
 {
@@ -858,9 +869,39 @@ main .box2 p
 		width: 100%;
 	}
 
+	
+	header{
+		/* display: block; */
+		/* display: none; */
+		text-align: center;
+		padding: 0;
+		border-bottom-left-radius: 0px;
+		/* left: 50%; */
+		/* position: fixed; */
+		/* right: 50%; */
+		/* backdrop-filter: blur(10px); */
+		justify-content: center;
+		background-color: #1E1E1E;
+		/* width: 100%; */
+		justify-content: space-between;
+	}
+
+
+	ul {
+		margin: 0;
+		list-style: none;
+		color: #4b4b4b;
+		padding: 15px;
+		margin-right: 2px;
+		transition: ease;
+		display: none;
+	}
+
+
 	#nav-bar{
-		/* display: grid; */
+		display: grid;
 		margin-top: 0.0vh;
+		/* flex-direction: column; */
 	}
 
 	.intro
@@ -958,17 +999,7 @@ main .box2 p
 		/* justify-content: space-between; */
 	}
 
-		#contact
-		{
-		background: #1e1e1e;
-		border-radius: 5px;
-		box-shadow: 0 0 10px rgba(0,0,0,0.2);
-		transition: transform 0.4s ease;
-		margin-left: 5vh;
-		margin-right: 5vh;
-		margin-top: 60px;
-		width: auto;
-		}
+	
 
 		.contact-form
 		{
@@ -989,7 +1020,8 @@ main .box2 p
 
 
 		#message {
-			width: fit-content;
+			width: -webkit-fill-available;
+			/* flex-direction: column; */
 		}
 
 		.gradiant{
@@ -1005,6 +1037,25 @@ main .box2 p
 		.blur{
 			backdrop-filter: blur(30vh);
 		}
+
+		.box4 {
+
+margin-left: 5vh;
+
+margin-right: 5vh;
+	
+
+
+		.contactform-p {
+
+display: block;
+
+width: -webkit-fill-available;
+
+}
+;
+
+width: -webkit-fill-available;
 }
 
 

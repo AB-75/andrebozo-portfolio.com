@@ -10,24 +10,17 @@ window.addEventListener('DOMContentLoaded', () => {
 	  const newColor = startColor.map((value, index) => {
 		return value + (endColor[index] - value) * percentage;
 	  });
-	  head.style.backgroundColor = `rgb(${newColor.join(',')})`;
+	  if (window.matchMedia("(min-width: 415px)").matches) {
+		head.style.backgroundColor = `rgb(${newColor.join(',')})`;
+	  }
 	});
   });
   
-
-
-
-// autr
 var link = document.querySelector('#nav-logo');
 link.addEventListener('click', function(event) {
 	event.preventDefault();
 	location.reload();
 });
-
-
-
-  
-
 
 function move() {
 	var progressBars = document.querySelectorAll('.progress');
@@ -40,5 +33,34 @@ function move() {
 
 
 
+// sidebar
 
+window.addEventListener('DOMContentLoaded', () => {
+	const uls = document.querySelectorAll('ul');
+  
+	window.addEventListener('resize', () => {
+	  if (window.matchMedia("(max-width: 414px)").matches) {
+		for (let i = 0; i < uls.length; i++) {
+		  uls[i].style.display = 'content';
+		}
+	  } else {
+		for (let i = 0; i < uls.length; i++) {
+		  uls[i].style.display = 'none';
+		}
+	  }
+	});
+  
+	var button = document.querySelector('#nav-bar li');
+	button.addEventListener('click', function(event) {
+	  event.preventDefault();
+	  if (window.matchMedia("(min-width: 415px)").matches) {
+		const sidebar = document.querySelector('.ul');
+		if (sidebar.style.display === 'none') {
+		  sidebar.style.display = 'content';
+		} else {
+		  sidebar.style.display = 'none';
+		}
+	  }
+	});
+  });
 
