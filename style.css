@@ -79,13 +79,13 @@ body
 
 .liens_pres{
 	font-size: small;
-	color: #4b4b4b;
+	color: #ffffff85;
 	text-decoration: none;
 	cursor: pointer;
 }
 
 .liens_pres:hover{
-	color: #6e6e6e;
+	color: #ffffffb5;
 }
 
 .gradiant{
@@ -921,16 +921,19 @@ main .box2 p
 
 	.intro_h1{
 		left: 2vh;
-		text-align: none;
+		/* right: 0vh; */
+		/* text-align: -webkit-match-parent; */
 	}
 
 	
 
 	.intro_h2 {
 		opacity: 0;
-		top: 15vh;
+		top: 10vh;
 		text-align: inherit;
 		left: 2vh;
+		/* width: 148%; */
+		/* position: absolute; */
 	}
 
 
@@ -1048,7 +1051,7 @@ main .box2 p
 			/* animation: rotate 40S infinite; */
 		}
 		.blur{
-			backdrop-filter: blur(25vh);
+			backdrop-filter: blur(0vh);
 		}
 
 		.box4 {
