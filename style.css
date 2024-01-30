@@ -279,16 +279,16 @@ nav li:hover
 .box
 {
 	width: auto;
-    color: white;
-    background: #1e1e1eb3;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    display: -webkit-inline-box;
-    margin-left: 35vh;
-    margin-right: 35vh;
-    margin-top: 60px;
-    padding: 5vh;
-    transition: transform 0.4s ease;
+	color: white;
+	background: #1e1e1eb3;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.2);
+	display: -webkit-inline-box;
+	margin-left: 35vh;
+	margin-right: 35vh;
+	margin-top: 60px;
+	padding: 5vh;
+	transition: transform 0.4s ease;
 }
 
 .cmont
@@ -947,6 +947,7 @@ main .box2 p
 		margin-right: 5vh;
 		margin-top: 5vh;
 		width: auto;
+		padding: 3vh;
 	}
 
 		main .box .content
@@ -980,6 +981,7 @@ main .box2 p
 		margin-right: 5vh;
 		margin-top: 60px;
 		width: auto;
+		padding: 3vh;
 	}
 
 		.desktop-img
@@ -990,8 +992,10 @@ main .box2 p
 
 	.box3
 	{
+		background: #1e1e1e;
 		margin-left: 5vh;
 		margin-right: 5vh;
+		padding: 3vh;
 	}
 
 	.grid-block {
@@ -1039,23 +1043,20 @@ main .box2 p
 		}
 
 		.box4 {
-
-margin-left: 5vh;
-
-margin-right: 5vh;
+background: #1e1e1e;
+margin-left: 5vh;
+margin-right: 5vh;
 	
 
 
 		.contactform-p {
-
-display: block;
-
-width: -webkit-fill-available;
+display: block;
+width: -webkit-fill-available;
 
 }
 ;
-
-width: -webkit-fill-available;
+width: -webkit-fill-available;
+padding: 3vh;
 }
 
 
