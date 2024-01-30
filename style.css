@@ -115,6 +115,8 @@ body
 }
 
 .blur{
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
 	min-height: 100%;
 	width: -webkit-fill-available;
 	backdrop-filter: blur(15vh);
@@ -1048,6 +1050,8 @@ main .box2 p
 		.blur{
 			backdrop-filter: blur(25vh);
 			/* min-height: 100%; */
+			-webkit-backface-visibility: hidden;
+			-moz-backface-visibility: hidden;
 		}
 
 		.box4 {
