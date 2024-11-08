@@ -818,16 +818,11 @@ main .box2 p
 	color: white;
 	background: #10101000;
 }
-
 .footer_span
 {
 	display: grid;
 	padding: 0.3vh;
 }
-
-
-/* petit texte 'faites defiler ' */
-
 .scroll-down.disappear
 {
 	animation: disappear 2s forwards;
@@ -869,7 +864,6 @@ main .box2 p
 
 @media only screen and (max-width: 414px)
 {
-	/* For mobile phones: */
 	[class*="col-"]
 	{
 		width: 100%;
@@ -877,18 +871,12 @@ main .box2 p
 
 	
 	header{
-		/* display: block; */
-		/* display: none; */
+
 		text-align: center;
 		padding: 0;
 		border-bottom-left-radius: 0px;
-		/* left: 50%; */
-		/* position: fixed; */
-		/* right: 50%; */
-		/* backdrop-filter: blur(10px); */
 		justify-content: center;
 		background-color: #1E1E1E;
-		/* width: 100%; */
 		justify-content: space-between;
 	}
 
