@@ -40,14 +40,17 @@ body
 {
 	animation: fadeIn;
 	animation-duration: 3s;
-	color: white;
-	font-size: 6vh;
-	position: absolute;
 	top: 20vh;
 	left: 38vh;
 	opacity: 1;
 	/* text-align: center; */
 	z-index: 3;
+
+	color: white;
+    	position: relative;
+    	font-size: xx-large;
+    	font-weight: bold;
+   	 margin: 0;
 }
 
 .intro_h2 {
