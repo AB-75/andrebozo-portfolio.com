@@ -556,6 +556,7 @@ main .box2 p
 	width: -webkit-fill-available;
 	height: 3vh;
 	margin-top: 2vh;
+    	margin-bottom: 2vh;
 }
 
 #message
@@ -1068,6 +1069,7 @@ width: -webkit-fill-available;
 
 padding: 3vh;
 }
+
 
 
 
