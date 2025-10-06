@@ -147,6 +147,8 @@ nav li:hover {
 	padding: 4px 10px;
 	text-decoration: none;
 	transition: background-color 0.3s ease;
+	display: inline-block;
+	cursor: pointer;
 }
 
 #bouton6:hover {
@@ -154,12 +156,13 @@ nav li:hover {
 }
 
 /* ===================================
-   SECTION INTRO
+   SECTION INTRO + ARRIÈRE-PLAN
    =================================== */
 
 .intro_div {
 	height: 100vh;
 	position: relative;
+	overflow: hidden;
 }
 
 .intro_h1 {
@@ -206,7 +209,7 @@ nav li:hover {
 	color: #ffffffb5;
 }
 
-/* Gradient animé */
+/* Gradient animé - VERSION DESKTOP */
 .gradiant {
 	background: linear-gradient(214deg, rgba(255,0,215,1) 20%, rgba(34,27,255,1) 86%);
 	height: 50vh;
@@ -296,9 +299,11 @@ nav li:hover {
 	padding: 0;
 }
 
-.box .content {
+.box .content,
+.box2 .content,
+.box3 .content,
+.box4 .content {
 	color: #ffffff;
-	display: inline-block;
 	width: 100%;
 }
 
@@ -326,6 +331,7 @@ nav li:hover {
 	background-color: #ffffff;
 	border: none;
 	border-radius: 5px;
+	margin: 10px 0;
 }
 
 /* ===================================
@@ -348,6 +354,7 @@ nav li:hover {
 
 .compet_p {
 	text-decoration: underline;
+	margin-top: 10px;
 }
 
 .barres-pourcentage {
@@ -356,6 +363,7 @@ nav li:hover {
 
 .my-progress-bar {
 	height: 2vh;
+	min-height: 20px;
 	background-color: #ffffff05;
 	border-radius: 5px;
 	margin-bottom: 9px;
@@ -408,6 +416,7 @@ nav li:hover {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 	gap: 1.5vh;
+	margin-top: 2vh;
 }
 
 .tile-link {
@@ -416,6 +425,7 @@ nav li:hover {
 	margin: 0;
 	border-radius: 2px;
 	transition: all 0.4s ease;
+	display: block;
 }
 
 .tile-link:hover {
@@ -438,6 +448,7 @@ nav li:hover {
 	opacity: 0.3;
 	border-radius: 2px;
 	transition: all 0.4s ease;
+	display: block;
 }
 
 .projet_p {
@@ -449,98 +460,91 @@ nav li:hover {
 }
 
 /* ===================================
-   FORMULAIRE DE CONTACT
+   FORMULAIRE DE CONTACT - CORRIGÉ
    =================================== */
 
 .form_contact {
 	margin-top: 2vh;
-	display: flex;
-	flex-wrap: wrap;
+	display: grid;
+	grid-template-columns: 1fr;
 	gap: 3vh;
-	padding: 3vh;
-	transition: background-color 0.3s ease;
+	padding: 0;
 }
 
-.form_contact:hover {
-	background-color: #868b9210;
-}
-
-.contact-form {
-	flex: 1;
-	min-width: 280px;
-}
-
-.contact-form label {
-	display: block;
-	margin-bottom: 10px;
-	color: #ffffff;
-	padding: 5px 0;
-	margin-top: 10px;
-}
-
-.contact-form input,
-.contact-form textarea {
+.div-form {
 	width: 100%;
-	padding: 6px;
-	border-radius: 5px;
-	border: none;
-	outline: none;
 }
 
-#name,
+.contactform-p {
+	display: flex;
+	flex-direction: column;
+	gap: 2vh;
+	width: 100%;
+}
+
+.contactform-p > div {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 2vh;
+}
+
 #email {
-	height: 3vh;
-	min-height: 32px;
+	width: 100%;
+	height: 40px;
 	border-radius: 5px;
 	border: none;
 	outline: none;
-	margin-bottom: 2vh;
+	padding: 10px;
+	font-size: 16px;
 }
 
 #message {
-	resize: none;
-	height: 10vh;
-	min-height: 100px;
+	resize: vertical;
+	min-height: 150px;
+	width: 100%;
 	font-family: sans-serif;
 	border-radius: 5px;
 	border: none;
 	outline: none;
+	padding: 10px;
+	font-size: 16px;
 }
 
-.contact-form button {
-	display: block;
-	padding: 10px 20px;
+.form_contact button[type="submit"] {
+	width: auto;
+	min-width: 150px;
+	max-width: 300px;
+	padding: 12px 24px;
 	background-color: #0069ff;
 	color: white;
 	border: none;
 	border-radius: 5px;
-	margin-top: 1vh;
 	cursor: pointer;
 	transition: background-color 0.3s ease;
+	font-size: 16px;
+	margin-top: 1vh;
 }
 
-.contact-form button:hover {
+.form_contact button[type="submit"]:hover {
 	background-color: #6b7a8f;
 }
 
-/* ===================================
-   CARTE GOOGLE MAPS
-   =================================== */
-
-.map-box {
-	flex: 1;
-	min-width: 280px;
-	padding: 0;
+.form_contact p {
+	margin-top: 2vh;
+	line-height: 1.6;
 }
 
+/* ===================================
+   CARTE GOOGLE MAPS - CORRIGÉE
+   =================================== */
+
 .iframe {
-	border: none;
-	margin-top: 2vh;
-	display: block;
-	height: 25vh;
-	min-height: 250px;
 	width: 100%;
+	height: 300px;
+	border: none;
 	border-radius: 5px;
+	margin-top: 3vh;
 }
 
 /* ===================================
@@ -587,9 +591,17 @@ nav li:hover {
 	margin: 0;
 	padding: 0;
 	height: 6vh;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
-.socials_links {
+.images_footer img {
+	height: 100%;
+	width: auto;
+	object-fit: contain;
+}
+
+.socials-icons {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -600,11 +612,12 @@ nav li:hover {
 .socials_a {
 	text-decoration: none;
 	color: white;
-	transition: color 0.3s ease;
+	transition: transform 0.3s ease;
+	display: inline-block;
 }
 
 .socials_a:hover {
-	color: #0069ff;
+	transform: scale(1.1);
 }
 
 /* ===================================
@@ -622,9 +635,24 @@ nav li:hover {
 		max-width: 90%;
 	}
 
+	/* Gradient fixe pour tablettes */
 	.gradiant {
-		left: 50%;
-		transform: translateX(-50%);
+		background: radial-gradient(
+			ellipse at 30% 40%,
+			rgba(255,0,215,0.4) 0%,
+			rgba(34,27,255,0.3) 50%,
+			transparent 100%
+		);
+		height: 100%;
+		width: 100%;
+		top: 0;
+		left: 0;
+		border-radius: 0;
+		animation: none;
+	}
+
+	.blur {
+		backdrop-filter: blur(8vh);
 	}
 
 	.box,
@@ -680,20 +708,33 @@ nav li:hover {
 		left: 2vh;
 		top: 10vh;
 		max-width: 95%;
+		font-size: clamp(0.9rem, 3.5vw, 1.2rem);
 	}
 
+	/* Gradient fixe et stylé pour mobile */
 	.gradiant {
-		background: linear-gradient(295deg, rgba(255,0,215,1) 10%, rgba(34,27,255,1) 90%);
+		background: linear-gradient(
+			135deg,
+			rgba(255,0,215,0.3) 0%,
+			rgba(34,27,255,0.3) 100%
+		);
 		height: 100%;
 		width: 100%;
 		top: 0;
 		left: 0;
 		border-radius: 0;
 		animation: none;
+		position: fixed;
 	}
 
 	.blur {
-		backdrop-filter: blur(5vh);
+		backdrop-filter: blur(0);
+		background: linear-gradient(
+			180deg,
+			transparent 0%,
+			rgba(18, 18, 18, 0.6) 50%,
+			rgba(18, 18, 18, 0.9) 100%
+		);
 	}
 
 	.box,
@@ -710,14 +751,21 @@ nav li:hover {
 	}
 
 	.form_contact {
-		flex-direction: column;
-		padding: 2vh;
+		padding: 0;
 	}
 
-	.contact-form,
-	.map-box {
+	#email,
+	#message {
+		font-size: 16px; /* Évite le zoom sur iOS */
+	}
+
+	.form_contact button[type="submit"] {
 		width: 100%;
-		min-width: 100%;
+		max-width: 100%;
+	}
+
+	.iframe {
+		height: 250px;
 	}
 
 	.scroll-down {
@@ -759,6 +807,10 @@ nav li:hover {
 	#COMPETENCES_h1,
 	.contact_h1 {
 		font-size: 1.3rem;
+	}
+
+	.images_footer {
+		height: 5vh;
 	}
 }
 
