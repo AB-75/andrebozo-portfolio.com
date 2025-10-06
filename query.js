@@ -111,3 +111,47 @@ window.addEventListener('resize', function() {
 });
 
 
+// Menu hamburger pour mobile
+document.addEventListener('DOMContentLoaded', function() {
+    const nav = document.getElementById('nav-bar');
+    const header = document.querySelector('header');
+    
+    // Créer le bouton hamburger seulement sur mobile
+    function createHamburger() {
+        if (window.innerWidth <= 768) {
+            let hamburger = document.getElementById('hamburger-btn');
+            if (!hamburger) {
+                hamburger = document.createElement('button');
+                hamburger.id = 'hamburger-btn';
+                hamburger.innerHTML = '☰';
+                hamburger.style.cssText = 'background: none; border: none; color: white; font-size: 30px; cursor: pointer; padding: 0; display: block; z-index: 10000;';
+                header.appendChild(hamburger);
+                
+                hamburger.addEventListener('click', function() {
+                    const ul = nav.querySelector('ul');
+                    ul.classList.toggle('active');
+                });
+            }
+        } else {
+            const hamburger = document.getElementById('hamburger-btn');
+            if (hamburger) hamburger.remove();
+        }
+    }
+    
+    createHamburger();
+    
+    // Fermer le menu quand on clique sur un lien
+    const menuLinks = nav.querySelectorAll('a');
+    menuLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            const ul = nav.querySelector('ul');
+            ul.classList.remove('active');
+        });
+    });
+    
+    // Gérer le resize
+    window.addEventListener('resize', createHamburger);
+});
+
+
+
