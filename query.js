@@ -1,4 +1,4 @@
-window.addEventListener('DOMContentLoaded', () => {
+bwindow.addEventListener('DOMContentLoaded', () => {
 	const head = document.querySelector('header');
 	const startColor = [25, 25, 25, 0]; 
 	const endColor = [30, 30, 30, 1]; 
@@ -63,4 +63,51 @@ window.addEventListener('DOMContentLoaded', () => {
 	  }
 	});
   });
+
+
+// Menu hamburger toggle
+document.addEventListener('DOMContentLoaded', function() {
+    // Créer le bouton hamburger s'il n'existe pas
+    const nav = document.getElementById('nav-bar');
+    const header = document.querySelector('header');
+    
+    // Vérifier si on est sur mobile
+    if (window.innerWidth <= 768) {
+        // Créer le bouton hamburger
+        let hamburger = document.getElementById('hamburger-btn');
+        if (!hamburger) {
+            hamburger = document.createElement('button');
+            hamburger.id = 'hamburger-btn';
+            hamburger.innerHTML = '☰';
+            hamburger.style.cssText = 'background: none; border: none; color: white; font-size: 30px; cursor: pointer; padding: 0; display: block;';
+            header.insertBefore(hamburger, nav);
+        }
+        
+        // Toggle menu au clic
+        hamburger.addEventListener('click', function() {
+            const ul = nav.querySelector('ul');
+            ul.classList.toggle('active');
+        });
+        
+        // Fermer le menu quand on clique sur un lien
+        const menuLinks = nav.querySelectorAll('a');
+        menuLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                nav.querySelector('ul').classList.remove('active');
+            });
+        });
+    }
+});
+
+// Réafficher le menu desktop si on resize
+window.addEventListener('resize', function() {
+    const ul = document.querySelector('#nav-bar ul');
+    if (window.innerWidth > 768) {
+        ul.style.display = 'flex';
+        ul.classList.remove('active');
+    } else {
+        ul.style.display = 'none';
+    }
+});
+
 
