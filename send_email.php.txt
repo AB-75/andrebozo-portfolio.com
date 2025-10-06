@@ -1,0 +1,33 @@
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Récupération et sécurisation des données
+    $email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
+    $message = htmlspecialchars($_POST['message']);
+    
+    // Validation
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        header("Location: index.html?error=email_invalide");
+        exit;
+    }
+    
+    // Configuration de l'email
+    $to = "qazed08@outlook.com"; // Votre email
+    $subject = "Nouveau message depuis le portfolio - " . $email;
+    $body = "Nouveau message reçu depuis le formulaire de contact\n\n";
+    $body .= "Email de l'expéditeur : " . $email . "\n\n";
+    $body .= "Message :\n" . $message . "\n";
+    
+    // Headers
+    $headers = "From: noreply@votresite.com\r\n";
+    $headers .= "Reply-To: " . $email . "\r\n";
+    $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
+    
+    // Envoi
+    if (mail($to, $subject, $body, $headers)) {
+        header("Location: index.html?success=1");
+    } else {
+        header("Location: index.html?error=envoi_echoue");
+    }
+    exit;
+}
+?>
