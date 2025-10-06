@@ -237,58 +237,64 @@ Vous trouverez ci-dessous un aperçu de mes réalisations les plus significative
 	</div>
 </div>
 <!-- box4 (contacts) -->
-<div class="box4" id="contact"  >
-	<div  class="content" >
+<div class="box4" id="contact">
+	<div class="content">
 		
-		<div >
-			<h1 class="contact_h1">CONTACS </h1>
+		<div>
+			<h1 class="contact_h1">CONTACTS</h1>
 			<hr class="hr_titre">
-			<!-- <p style="padding-left: 40px;" >
-				Des questions, des suggestions...  Je suis là pour ça, surtout n'hésitez pas !
-			</p> -->
 		</div>
 	
-
-
-
-		
-
-		<form action="send_email.php" class="form_contact" method="post">
-				<!-- HTML code for the Google map -->
-
+		<!-- Formulaire avec Formspree -->
+		<form action="https://formspree.io/f/myznpqkq" method="POST" class="form_contact">
+			
 			<div class="div-form">
-				<!-- <label for="email">E-Mail</label> -->
-			<div class="div-form">
-				<!-- <label for="email">E-Mail</label> -->
-				<div class="contactform-p" >
-					<div >
-					
-						
-						<input type="email" id="email" name="email" placeholder=" e-mail ..."  required>
+				<div class="contactform-p">
+					<div>
+						<!-- Champ email -->
+						<input 
+							type="email" 
+							id="email" 
+							name="email" 
+							placeholder="e-mail ..."  
+							required
+						>
 
-						
-						<textarea id="message" name="message" placeholder="message ..." required></textarea>				
+						<!-- Champ message -->
+						<textarea 
+							id="message" 
+							name="message" 
+							placeholder="message ..." 
+							required
+						></textarea>
 					</div>
 				</div>
 
-				<br>
-				<br>
-				
-				<button type="submit" id="bouton6" style="border: none; margin-left: 0; width: 25vh;">Envoyer</button>
-				
-				<br>
-				<br >
-				<p >
-					Si vous souhaitez commencer un projet avec moi ou si vous avez des questions particulières ou des suggestions, n’hésitez pas à me contacter ici ou via mes coordonnées.
-			</p >
+				<button type="submit" id="bouton6" style="border: none; margin-left: 0; width: auto; min-width: 150px;">
+					Envoyer
+				</button>
+
+				<p>
+					Si vous souhaitez commencer un projet avec moi ou si vous avez des questions particulières ou des suggestions, n'hésitez pas à me contacter ici ou via mes coordonnées.
+				</p>
+			</div>
 			
 		</form>
-			<div >
-			<iframe class="iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.999836971707!2d2.294481315674771!3d48.85837007928766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e296f9aa34b%3A0x9c8f0eeeff4b710f!2sParis%2C%20France!5e0!3m2!1sen!2sca!4v1639502544408!5m2!1sen!2sca!" width="0" height="0" allowfullscreen="no" loading="lazy">
+
+		<!-- Carte Google Maps -->
+		<div>
+			<iframe 
+				class="iframe" 
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.999836971707!2d2.294481315674771!3d48.85837007928766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e296f9aa34b%3A0x9c8f0eeeff4b710f!2sParis%2C%20France!5e0!3m2!1sen!2sca!4v1639502544408!5m2!1sen!2sca" 
+				width="0" 
+				height="0" 
+				allowfullscreen 
+				loading="lazy">
 			</iframe>
 		</div>
-		</div>
+
 	</div>
+</div>
 </main>
 <!-- footer -->
 <footer><div class="footer-clean">
@@ -332,6 +338,7 @@ Vous trouverez ci-dessous un aperçu de mes réalisations les plus significative
 </html>
 </body>
 </html>
+
 
 
 
