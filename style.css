@@ -674,17 +674,30 @@ nav li:hover {
 
 @media only screen and (max-width: 768px) {
 	header {
-		flex-direction: column;
+		flex-direction: row;
+		justify-content: space-between;
 		padding: 2vh;
 		background-color: #1E1E1E;
 		border-bottom-left-radius: 0;
-		gap: 10px;
 	}
 
+	/* Cache le menu par défaut sur mobile */
 	nav ul {
+		display: none;
 		flex-direction: column;
 		gap: 10px;
 		width: 100%;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		background-color: #1E1E1E;
+		padding: 2vh;
+		box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+	}
+
+	/* Menu visible quand actif */
+	nav ul.active {
+		display: flex;
 	}
 
 	nav li {
@@ -693,9 +706,10 @@ nav li:hover {
 	}
 
 	#nav-bar a {
-		padding: 1vh;
-		background-color: transparent;
+		padding: 1.5vh;
+		background-color: #868b9217;
 		display: block;
+		border-radius: 5px;
 	}
 
 	.intro_h1 {
