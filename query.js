@@ -29,21 +29,30 @@ if (link) {
 // Animation des barres de progression
 function move() {
 	var progressBars = document.querySelectorAll('.progress');
-	var percentages = [95, 95, 80, 65, 55, 75, 65];
+	var percentages = [95, 95, 80, 65, 55, 75];
 	for (var i = 0; i < progressBars.length; i++) {
 		progressBars[i].style.transition = 'width 2s';
 		progressBars[i].style.width = percentages[i] + '%';
 	}
 }
 
-// MENU HAMBURGER - VERSION UNIQUE ET CORRIGÉE
-document.addEventListener('DOMContentLoaded', function() {
+// MENU HAMBURGER - VERSION CORRIGÉE (UN SEUL BOUTON)
+(function() {
+	// Éviter l'exécution multiple
+	if (window.hamburgerInitialized) return;
+	window.hamburgerInitialized = true;
+
 	const nav = document.getElementById('nav-bar');
 	const header = document.querySelector('header');
-	const ul = nav ? nav.querySelector('ul') : null;
 	
-	if (!nav || !header || !ul) {
+	if (!nav || !header) {
 		console.error('Navigation elements not found');
+		return;
+	}
+
+	const ul = nav.querySelector('ul');
+	if (!ul) {
+		console.error('Menu ul not found');
 		return;
 	}
 
@@ -51,47 +60,54 @@ document.addEventListener('DOMContentLoaded', function() {
 
 	// Fonction pour créer/supprimer le hamburger selon la taille d'écran
 	function manageHamburger() {
+		// Supprimer TOUS les hamburgers existants pour éviter les doublons
+		const existingHamburgers = document.querySelectorAll('#hamburger-btn, [aria-label="Toggle menu"]');
+		existingHamburgers.forEach(btn => btn.remove());
+		hamburger = null;
+
 		if (window.innerWidth <= 768) {
-			// Mode mobile - créer le hamburger s'il n'existe pas
-			if (!hamburger) {
-				hamburger = document.createElement('button');
-				hamburger.id = 'hamburger-btn';
-				hamburger.innerHTML = '☰';
-				hamburger.setAttribute('aria-label', 'Toggle menu');
-				hamburger.style.cssText = 'background: none; border: none; color: white; font-size: 30px; cursor: pointer; padding: 10px; display: block; z-index: 10000;';
+			// Mode mobile - créer UN SEUL hamburger
+			hamburger = document.createElement('button');
+			hamburger.id = 'hamburger-btn';
+			hamburger.innerHTML = '☰';
+			hamburger.setAttribute('aria-label', 'Toggle menu');
+			hamburger.style.cssText = 'background: none; border: none; color: white; font-size: 30px; cursor: pointer; padding: 10px; display: block; z-index: 10000; position: relative;';
+			
+			// Insérer le hamburger comme premier enfant du header
+			header.insertBefore(hamburger, header.firstChild);
+			
+			// Événement click sur le hamburger
+			hamburger.addEventListener('click', function(e) {
+				e.stopPropagation();
+				const isActive = ul.classList.toggle('active');
 				
-				// Insérer le hamburger au début du header
-				header.insertBefore(hamburger, header.firstChild);
-				
-				// Événement click sur le hamburger
-				hamburger.addEventListener('click', function(e) {
-					e.stopPropagation();
-					ul.classList.toggle('active');
-					// Changer l'icône
-					hamburger.innerHTML = ul.classList.contains('active') ? '✕' : '☰';
-				});
-			}
+				// Afficher/cacher le menu
+				if (isActive) {
+					ul.style.display = 'flex';
+					hamburger.innerHTML = '✕';
+				} else {
+					ul.style.display = 'none';
+					hamburger.innerHTML = '☰';
+				}
+			});
 			
 			// S'assurer que le menu est caché par défaut sur mobile
-			if (!ul.classList.contains('active')) {
-				ul.style.display = 'none';
-			}
+			ul.style.display = 'none';
+			ul.classList.remove('active');
 			
 		} else {
-			// Mode desktop - supprimer le hamburger
-			if (hamburger) {
-				hamburger.remove();
-				hamburger = null;
-			}
-			
-			// Réafficher le menu en mode desktop
+			// Mode desktop - pas de hamburger
 			ul.style.display = 'flex';
 			ul.classList.remove('active');
 		}
 	}
 
-	// Initialiser au chargement
-	manageHamburger();
+	// Attendre que le DOM soit complètement chargé
+	if (document.readyState === 'loading') {
+		document.addEventListener('DOMContentLoaded', manageHamburger);
+	} else {
+		manageHamburger();
+	}
 
 	// Fermer le menu quand on clique sur un lien
 	const menuLinks = nav.querySelectorAll('a');
@@ -107,7 +123,7 @@ document.addEventListener('DOMContentLoaded', function() {
 		});
 	});
 
-	// Gérer le redimensionnement de la fenêtre
+	// Gérer le redimensionnement de la fenêtre avec debounce
 	let resizeTimer;
 	window.addEventListener('resize', function() {
 		clearTimeout(resizeTimer);
@@ -123,7 +139,9 @@ document.addEventListener('DOMContentLoaded', function() {
 			!hamburger.contains(event.target)) {
 			ul.classList.remove('active');
 			ul.style.display = 'none';
-			hamburger.innerHTML = '☰';
+			if (hamburger) {
+				hamburger.innerHTML = '☰';
+			}
 		}
 	});
-});
+})();
